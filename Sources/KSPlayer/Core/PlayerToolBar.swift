@@ -140,26 +140,32 @@ public class PlayerToolBar: UIStackView {
         playbackRateButton.titleFont = .systemFont(ofSize: 14, weight: .medium)
         playbackRateButton.setTitleColor(focusColor, for: .focused)
         playbackRateButton.setTitleColor(tintColor, for: .normal)
+        playbackRateButton.isHidden = true
         definitionButton.tag = PlayerButtonType.definition.rawValue
         definitionButton.titleFont = .systemFont(ofSize: 14, weight: .medium)
         definitionButton.setTitleColor(focusColor, for: .focused)
         definitionButton.setTitleColor(tintColor, for: .normal)
+        definitionButton.isHidden = true
         audioSwitchButton.tag = PlayerButtonType.audioSwitch.rawValue
         audioSwitchButton.titleFont = .systemFont(ofSize: 14, weight: .medium)
         audioSwitchButton.setTitleColor(focusColor, for: .focused)
         audioSwitchButton.setTitleColor(tintColor, for: .normal)
+        audioSwitchButton.isHidden = true
         videoSwitchButton.tag = PlayerButtonType.videoSwitch.rawValue
         videoSwitchButton.titleFont = .systemFont(ofSize: 14, weight: .medium)
         videoSwitchButton.setTitleColor(focusColor, for: .focused)
         videoSwitchButton.setTitleColor(tintColor, for: .normal)
+        videoSwitchButton.isHidden = true
         srtButton.tag = PlayerButtonType.srt.rawValue
         srtButton.titleFont = .systemFont(ofSize: 14, weight: .medium)
         srtButton.setTitleColor(focusColor, for: .focused)
         srtButton.setTitleColor(tintColor, for: .normal)
+        srtButton.isHidden = true
         pipButton.tag = PlayerButtonType.pictureInPicture.rawValue
         pipButton.titleFont = .systemFont(ofSize: 14, weight: .medium)
         pipButton.setTitleColor(focusColor, for: .focused)
         pipButton.setTitleColor(tintColor, for: .normal)
+        pipButton.isHidden = true
         if #available(macOS 11.0, *) {
             pipButton.setImage(UIImage(systemName: "pip.enter"), for: .normal)
             pipButton.setImage(UIImage(systemName: "pip.exit"), for: .selected)
